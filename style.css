@@ -1,0 +1,4882 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("pexels-pixabay-301692.JPG");
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+    height: 50px
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #633005;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav.fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+        
+}
+/*-------footer--------*/
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #867F7F;
+    color: #fff;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h4{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #f12020;
+}
+
+
+/*-------about us page-------*/
+.sub-header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Dest_San_Diego_Carruth-Cellars-Wine-Garden_Cheers_HERO__1920x1280.JPG");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+/*-------history page------*/
+.sub-header-1{
+    height: 100%;
+    width: 100%;
+    background:#808080;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+.sub-header-1 h1{
+    margin-top: 5px;
+}
+
+.history img{
+    width: 20%;
+    height: 20%;
+}
+/*-------management page------*/
+.sub-header-2{
+    height: 20%;
+    width: 100%;
+    background: #808080;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+.sub-header-2 h1{
+    margin-top: 5px;
+    
+}
+/*-------brands page-------*/
+.sub-2-header{
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("WhatsApp Image 2023-04-22 at 9.46.17 PM.JPEG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-header h1{
+	margin-top: 100px;
+}
+/*-----spirites-----*/
+.sub-2-header-1{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("3.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1 h1{
+	margin-top: 5px;
+}
+/*-----wine & champagne-----*/
+.sub-2-header-2{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("0_KxWo-Zkpp_SYuXrM.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-2 h1{
+	margin-top: 5px;
+}
+/*-----sake,mixers & beer-----*/
+.sub-2-header-3{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("istockphoto-533957701-612x612.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-3 h1{
+	margin-top: 5px;
+}
+/*-----whiskey-----*/
+.sub-2-header-1-1{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("istockphoto-533957701-612x612.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-1 h1{
+	margin-top: 5px;
+}
+
+/*------Scotch Whisky----------*/
+.Scotch-Whisky{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Scotch-Whisky-col1, .Scotch-Whisky-col2, .Scotch-Whisky-col3{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Scotch-Whisky-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Scotch-Whisky-col1 h3{
+	padding-top: 0;
+}
+.Scotch-Whisky-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Scotch-Whisky-col2 h3{
+	padding-top: 0;
+}
+
+.Scotch-Whisky-col3 img{
+	width: 100%;
+	height: 100%;
+}
+.Scotch-Whisky-col3 h3{
+	padding-top: 0;
+}
+
+/*-----scotch Whisky1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Scotch-Whisky1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Scotch-Whisky1-col1, .Scotch-Whisky1-col2, .Scotch-Whisky1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Scotch-Whisky1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Scotch-Whisky1-col2 h1{
+	padding-top: 0;
+}
+.Scotch-Whisky1-col2 p{
+	padding: 15px 0 25px;
+}
+.Scotch-Whisky1-col3{
+	flex-basis: 32%;
+}
+.Scotch-Whisky1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Scotch-Whisky1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----scotch Whisky2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Scotch-Whisky2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Scotch-Whisky2-col1, .Scotch-Whisky2-col2, .Scotch-Whisky2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Scotch-Whisky2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Scotch-Whisky2-col2 h1{
+	padding-top: 0;
+}
+.Scotch-Whisky2-col2 p{
+	padding: 15px 0 25px;
+}
+.Scotch-Whisky2-col3{
+	flex-basis: 32%;
+}
+.Scotch-Whisky2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Scotch-Whisky2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----scotch Whisky3----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Scotch-Whisky3{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Scotch-Whisky3-col1, .Scotch-Whisky3-col2, .Scotch-Whisky3-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Scotch-Whisky3-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Scotch-Whisky3-col2 h1{
+	padding-top: 0;
+}
+.Scotch-Whisky3-col2 p{
+	padding: 15px 0 25px;
+}
+.Scotch-Whisky3-col3{
+	flex-basis: 32%;
+}
+.Scotch-Whisky3-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Scotch-Whisky3-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*------Canadian Whisky----------*/
+.Canadian-Whisky{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Canadian-Whisky-col1{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Canadian-Whisky-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Canadian-Whisky-col1 h3{
+	padding-top: 0;
+}
+
+
+/*-----Canadian Whisky1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Canadian-Whisky1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Canadian-Whisky1-col1, .Canadian-Whisky1-col2, .Canadian-Whisky1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Canadian-Whisky1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Canadian-Whisky1-col2 h1{
+	padding-top: 0;
+}
+.Canadian-Whisky1-col2 p{
+	padding: 15px 0 25px;
+}
+.Canadian-Whisky1-col3{
+	flex-basis: 32%;
+}
+.Canadian-Whisky1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Canadian-Whisky1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*------Other Whisky----------*/
+.Other-Whisky{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Other-Whisky-col1, .Other-Whisky-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Other-Whisky-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Other-Whisky-col1 h3{
+	padding-top: 0;
+}
+.Other-Whisky-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Other-Whisky-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Other Whisky1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Other-Whisky1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Other-Whisky1-col1, .Other-Whisky1-col2, .Other-Whisky1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Other-Whisky1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Other-Whisky1-col2 h1{
+	padding-top: 0;
+}
+.Other-Whisky1-col2 p{
+	padding: 15px 0 25px;
+}
+.Other-Whisky1-col3{
+	flex-basis: 32%;
+}
+.Other-Whisky1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Other-Whisky1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Other Whisky2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Other-Whisky2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Other-Whisky2-col1, .Other-Whisky2-col2, .Other-Whisky2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Other-Whisky2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Other-Whisky2-col2 h1{
+	padding-top: 0;
+}
+.Other-Whisky2-col2 p{
+	padding: 15px 0 25px;
+}
+.Other-Whisky2-col3{
+	flex-basis: 32%;
+}
+.Other-Whisky2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Other-Whisky2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----gin-----*/
+.sub-2-header-1-2{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-2 h1{
+	margin-top: 5px;
+}
+
+
+/*------London Dry Gin----------*/
+.London-Dry-Gin{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.London-Dry-Gin-col1, .London-Dry-Gin-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.London-Dry-Gin-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.London-Dry-Gin-col1 h3{
+	padding-top: 0;
+}
+.London-Dry-Gin-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.London-Dry-Gin-col2 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----London Dry Gin1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.London-Dry-Gin1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.London-Dry-Gin1-col1, .London-Dry-Gin1-col2, .London-Dry-Gin1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.London-Dry-Gin1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.London-Dry-Gin1-col2 h1{
+	padding-top: 0;
+}
+.London-Dry-Gin1-col2 p{
+	padding: 15px 0 25px;
+}
+.London-Dry-Gin1-col3{
+	flex-basis: 32%;
+}
+.London-Dry-Gin1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.London-Dry-Gin1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----London Dry Gin2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.London-Dry-Gin2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.London-Dry-Gin2-col1, .London-Dry-Gin2-col2, .London-Dry-Gin2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.London-Dry-Gin2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.London-Dry-Gin2-col2 h1{
+	padding-top: 0;
+}
+.London-Dry-Gin2-col2 p{
+	padding: 15px 0 25px;
+}
+.London-Dry-Gin2-col3{
+	flex-basis: 32%;
+}
+.London-Dry-Gin2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.London-Dry-Gin2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*------Distilled Gin----------*/
+.Distilled-Gin{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Distilled-Gin-col1, .Distilled-Gin-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Distilled-Gin-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Distilled-Gin-col1 h3{
+	padding-top: 0;
+}
+.Distilled-Gin-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Distilled-Gin-col2 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----Distilled Gin1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Distilled-Gin1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Distilled-Gin1-col1, .Distilled-Gin1-col2, .Distilled-Gin1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Distilled-Gin1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Distilled-Gin1-col2 h1{
+	padding-top: 0;
+}
+.Distilled-Gin1-col2 p{
+	padding: 15px 0 25px;
+}
+.Distilled-Gin1-col3{
+	flex-basis: 32%;
+}
+.Distilled-Gin1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Distilled-Gin1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----Distilled Gin2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Distilled-Gin2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Distilled-Gin2-col1, .Distilled-Gin2-col2, .Distilled-Gin2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Distilled-Gin2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Distilled-Gin2-col2 h1{
+	padding-top: 0;
+}
+.Distilled-Gin2-col2 p{
+	padding: 15px 0 25px;
+}
+.Distilled-Gin2-col3{
+	flex-basis: 32%;
+}
+.Distilled-Gin2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Distilled-Gin2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*------Flavoured Gin----------*/
+.Flavoured-Gin{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Flavoured-Gin-col1, .London-Dry-Gin-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Flavoured-Gin-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Flavoured-Gin-col1 h3{
+	padding-top: 0;
+}
+.Flavoured-Gin-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Flavoured-Gin-col2 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----Flavoured Gin1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Flavoured-Gin1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Flavoured-Gin1-col1, .Flavoured-Gin1-col2, .Flavoured-Gin1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Flavoured-Gin1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Flavoured-Gin1-col2 h1{
+	padding-top: 0;
+}
+.Flavoured-Gin1-col2 p{
+	padding: 15px 0 25px;
+}
+.Flavoured-Gin1-col3{
+	flex-basis: 32%;
+}
+.Flavoured-Gin1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Flavoured-Gin1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Flavoured Gin2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Flavoured-Gin2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Flavoured-Gin2-col1, .Flavoured-Gin2-col2, .Flavoured-Gin2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Flavoured-Gin2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Flavoured-Gin2-col2 h1{
+	padding-top: 0;
+}
+.Flavoured-Gin2-col2 p{
+	padding: 15px 0 25px;
+}
+.Flavoured-Gin2-col3{
+	flex-basis: 32%;
+}
+.Flavoured-Gin2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Flavoured-Gin2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----arrack-----*/
+.sub-2-header-1-3{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("istockphoto-533957701-612x612.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-3 h1{
+	margin-top: 5px;
+}
+
+/*------Coconut Arrack----------*/
+.Coconut-Arrack{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Coconut-Arrack-col1, .Coconut-Arrack-col2, .Coconut-Arrack-col3{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Coconut-Arrack-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Coconut-Arrack-col1 h3{
+	padding-top: 0;
+}
+.Coconut-Arrack-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Coconut-Arrack-col2 h3{
+	padding-top: 0;
+}
+
+.Coconut-Arrack-col3 img{
+	width: 100%;
+	height: 100%;
+}
+.Coconut-Arrack-col3 h3{
+	padding-top: 0;
+}
+
+/*-----Coconut Arrack1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Coconut-Arrack1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Coconut-Arrack1-col1, .Coconut-Arrack1-col2, .Coconut-Arrack1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Coconut-Arrack1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Coconut-Arrack1-col2 h1{
+	padding-top: 0;
+}
+.Coconut-Arrack1-col2 p{
+	padding: 15px 0 25px;
+}
+.Coconut-Arrack1-col3{
+	flex-basis: 32%;
+}
+.Coconut-Arrack1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Coconut-Arrack1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Coconut Arrack2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Coconut-Arrack2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Coconut-Arrack2-col1, .Coconut-Arrack2-col2, .Coconut-Arrack2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Coconut-Arrack2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Coconut-Arrack2-col2 h1{
+	padding-top: 0;
+}
+.Coconut-Arrack2-col2 p{
+	padding: 15px 0 25px;
+}
+.Coconut-Arrack2-col3{
+	flex-basis: 32%;
+}
+.Coconut-Arrack2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Coconut-Arrack2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Coconut Arrack3----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Coconut-Arrack3{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Coconut-Arrack3-col1, .Coconut-Arrack3-col2, .Coconut-Arrack3-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Coconut-Arrack3-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Coconut-Arrack3-col2 h1{
+	padding-top: 0;
+}
+.Coconut-Arrack3-col2 p{
+	padding: 15px 0 25px;
+}
+.Coconut-Arrack3-col3{
+	flex-basis: 32%;
+}
+.Coconut-Arrack3-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Coconut-Arrack3-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----Blended Arrack----------*/
+.Blended-Arrack{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Blended-Arrack-col1, .Blended-Arrack-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Blended-Arrack-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Blended-Arrack-col1 h3{
+	padding-top: 0;
+}
+.Blended-Arrack-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Blended-Arrack-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Blended Arrack1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Blended-Arrack1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Blended-Arrack1-col1, .Blended-Arrack1-col2, .Blended-Arrack1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Blended-Arrack1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Blended-Arrack1-col2 h1{
+	padding-top: 0;
+}
+.Blended-Arrack1-col2 p{
+	padding: 15px 0 25px;
+}
+.Blended-Arrack1-col3{
+	flex-basis: 32%;
+}
+.Blended-Arrack1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Blended-Arrack1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Blended Arrack2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Blended-Arrack2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Blended-Arrack2-col1, .Blended-Arrack2-col2, .Blended-Arrack2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Blended-Arrack2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Blended-Arrack2-col2 h1{
+	padding-top: 0;
+}
+.Blended-Arrack2-col2 p{
+	padding: 15px 0 25px;
+}
+.Blended-Arrack2-col3{
+	flex-basis: 32%;
+}
+.Blended-Arrack2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Blended-Arrack2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Vodka-----*/
+.sub-2-header-1-6{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("pistachios-3450670__480.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-6 h1{
+	margin-top: 5px;
+}
+
+/*------Vodka----------*/
+.Vodka{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Vodka-col1, .Vodka-col2, .Vodka-col3, .Vodka-col4{
+	width: 200px;
+	float: left;
+	margin: 10px;
+}
+.Vodka-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Vodka-col1 h3{
+	padding-top: 0;
+}
+.Vodka-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Vodka-col2 h3{
+	padding-top: 0;
+}
+
+.Vodka-col3 img{
+	width: 100%;
+	height: 100%;
+}
+.Vodka-col3 h3{
+	padding-top: 0;
+}
+.Vodka-col4 img{
+	width: 100%;
+	height: 100%;
+}
+.Vodka-col4 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----Vodka1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Vodka1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Vodka1-col1, .Vodka1-col2, .Vodka1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Vodka1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Vodka1-col2 h1{
+	padding-top: 0;
+}
+.Vodka1-col2 p{
+	padding: 15px 0 25px;
+}
+.Vodka1-col3{
+	flex-basis: 32%;
+}
+.Vodka1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Vodka1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Vodka2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Vodka2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Vodka2-col1, .Vodka2-col2, .Vodka2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Vodka2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Vodka2-col2 h1{
+	padding-top: 0;
+}
+.Vodka2-col2 p{
+	padding: 15px 0 25px;
+}
+.Vodka2-col3{
+	flex-basis: 32%;
+}
+.Vodka2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Vodka2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Vodka3----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Vodka3{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Vodka3-col1, .Vodka3-col2, .Vodka3-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Vodka3-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Vodka3-col2 h1{
+	padding-top: 0;
+}
+.Vodka3-col2 p{
+	padding: 15px 0 25px;
+}
+.Vodka3-col3{
+	flex-basis: 32%;
+}
+.Vodka3-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Vodka3-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:  8px;
+	box-sizing: border-box;
+}
+
+/*-----Vodka4----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Vodka4{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Vodka4-col1, .Vodka4-col2, .Vodka4-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Vodka4-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Vodka4-col2 h1{
+	padding-top: 0;
+}
+.Vodka4-col2 p{
+	padding: 15px 0 25px;
+}
+.Vodka4-col3{
+	flex-basis: 32%;
+}
+.Vodka4-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Vodka4-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:  8px;
+	box-sizing: border-box;
+}
+
+
+
+
+/*-----rum-----*/
+.sub-2-header-1-5{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-5 h1{
+	margin-top: 5px;
+}
+
+
+/*--------White Rum--------*/
+.White-Rum{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.White-Rum-col1, .White-Rum-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.White-Rum-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.White-Rum-col1 h3{
+	padding-top: 0;
+}
+.White-Rum-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.White-Rum-col2 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----White Rum1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.White-Rum1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.White-Rum1-col1, .White-Rum1-col2, .White-Rum1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.White-Rum1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.White-Rum1-col2 h1{
+	padding-top: 0;
+}
+.White-Rum1-col2 p{
+	padding: 15px 0 25px;
+}
+.White-Rum1-col3{
+	flex-basis: 32%;
+}
+.White-Rum1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.White-Rum1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----White Rum2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.White-Rum2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.White-Rum2-col1, .White-Rum2-col2, .White-Rum2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.White-Rum2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.White-Rum2-col2 h1{
+	padding-top: 0;
+}
+.White-Rum2-col2 p{
+	padding: 15px 0 25px;
+}
+.White-Rum2-col3{
+	flex-basis: 32%;
+}
+.White-Rum2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.White-Rum2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*------Dark Rum----------*/
+.Dark-Rum{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Dark-Rum-col1, .Dark-Rum-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Dark-Rum-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Dark-Rum-col1 h3{
+	padding-top: 0;
+}
+.Dark-Rum-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Dark-Rum-col2 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----Dark Rum1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Dark-Rum1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Dark-Rum1-col1, .Dark-Rum1-col2, .Dark-Rum1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Dark-Rum1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Dark-Rum1-col2 h1{
+	padding-top: 0;
+}
+.Dark-Rum1-col2 p{
+	padding: 15px 0 25px;
+}
+.Dark-Rum1-col3{
+	flex-basis: 32%;
+}
+.Dark-Rum1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Dark-Rum1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----Dark Rum2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Dark-Rum2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Dark-Rum2-col1, .Dark-Rum2-col2, .Dark-Rum2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Dark-Rum2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Dark-Rum2-col2 h1{
+	padding-top: 0;
+}
+.Dark-Rum2-col2 p{
+	padding: 15px 0 25px;
+}
+.Dark-Rum2-col3{
+	flex-basis: 32%;
+}
+.Dark-Rum2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Dark-Rum2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*------Spiced Rum----------*/
+.Spiced-Rum{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Spiced-Rum-col1, .Spiced-Rum-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Spiced-Rum-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Spiced-Rum-col1 h3{
+	padding-top: 0;
+}
+.Spiced-Rum-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Spiced-Rum-col2 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----Spiced Rum1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Spiced-Rum1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Spiced-Rum1-col1, .Spiced-Rum1-col2, .Spiced-Rum1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Spiced-Rum1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Spiced-Rum1-col2 h1{
+	padding-top: 0;
+}
+.Spiced-Rum1-col2 p{
+	padding: 15px 0 25px;
+}
+.Spiced-Rum1-col3{
+	flex-basis: 32%;
+}
+.Spiced-Rum1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Spiced-Rum1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Spiced Rum2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Spiced-Rum2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Spiced-Rum2-col1, .Spiced-Rum2-col2, .Spiced-Rum2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Spiced-Rum2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Spiced-Rum2-col2 h1{
+	padding-top: 0;
+}
+.Spiced-Rum2-col2 p{
+	padding: 15px 0 25px;
+}
+.Spiced-Rum2-col3{
+	flex-basis: 32%;
+}
+.Spiced-Rum2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Spiced-Rum2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----brandy-----*/
+.sub-2-header-1-6{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("pistachios-3450670__480.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-6 h1{
+	margin-top: 5px;
+}
+
+/*------Brandy----------*/
+.Brandy{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Brandy-col1, .Brandy-col2, .Brandy-col3{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Brandy-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Brandy-col1 h3{
+	padding-top: 0;
+}
+.Brandy-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Brandy-col2 h3{
+	padding-top: 0;
+}
+
+.Brandy-col3 img{
+	width: 100%;
+	height: 100%;
+}
+.Brandy-col3 h3{
+	padding-top: 0;
+}
+
+/*-----Brandy1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Brandy1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Brandy1-col1, .Brandy1-col2, .Brandy1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Brandy1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Brandy1-col2 h1{
+	padding-top: 0;
+}
+.Brandy1-col2 p{
+	padding: 15px 0 25px;
+}
+.Brandy1-col3{
+	flex-basis: 32%;
+}
+.Brandy1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Brandy1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Brandy2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Brandy2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Brandy2-col1, .Brandy2-col2, .Brandy2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Brandy2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Brandy2-col2 h1{
+	padding-top: 0;
+}
+.Brandy2-col2 p{
+	padding: 15px 0 25px;
+}
+.Brandy2-col3{
+	flex-basis: 32%;
+}
+.Brandy2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Brandy2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Brandy3----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Brandy3{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Brandy3-col1, .Brandy3-col2, .Brandy3-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Brandy3-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Brandy3-col2 h1{
+	padding-top: 0;
+}
+.Brandy3-col2 p{
+	padding: 15px 0 25px;
+}
+.Brandy3-col3{
+	flex-basis: 32%;
+}
+.Brandy3-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Brandy3-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:  8px;
+	box-sizing: border-box;
+}
+
+
+
+/*-----red wine----*/
+.sub-2-header-2-1{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Dest_San_Diego_Carruth-Cellars-Wine-Garden_Cheers_HERO__1920x1280.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-2-1 h1{
+	margin-top: 5px;
+}
+
+/*------Red Blend----------*/
+.Red-Blend{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Red-Blend-col1, .Red-Blend-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Red-Blend-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Red-Blend-col1 h3{
+	padding-top: 0;
+}
+.Red-Blend-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Red-Blend-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Red Blend1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Red-Blend1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Red-Blend1-col1, .Red-Blend1-col2, .Red-Blend1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Red-Blend1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Red-Blend1-col2 h1{
+	padding-top: 0;
+}
+.Red-Blend1-col2 p{
+	padding: 15px 0 25px;
+}
+.Red-Blend1-col3{
+	flex-basis: 32%;
+}
+.Red-Blend1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Red-Blend1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Red Blend----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Red-Blend2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Red-Blend2-col1, .Red-Blend2-col2, .Red-Blend2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Red-Blend2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Red-Blend2-col2 h1{
+	padding-top: 0;
+}
+.Red-Blend2col2 p{
+	padding: 15px 0 25px;
+}
+.Red-Blend2-col3{
+	flex-basis: 32%;
+}
+.Red-Blend2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Red-Blend2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*------Merlot----------*/
+.Merlot{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Merlot-col1, .Merlot-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Merlot-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Merlot-col1 h3{
+	padding-top: 0;
+}
+.Merlot-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Merlot-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Merlot1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Merlot1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Merlot1-col1, .Merlot1-col2, .Merlot1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Merlot1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Merlot1-col2 h1{
+	padding-top: 0;
+}
+.Merlot1-col2 p{
+	padding: 15px 0 25px;
+}
+.Merlot1-col3{
+	flex-basis: 32%;
+}
+.Merlot1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Merlot1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Merlot2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Merlot2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Merlot2-col1, .Merlot2-col2, .Merlot2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Merlot2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Merlot2-col2 h1{
+	padding-top: 0;
+}
+.Merlot2-col2 p{
+	padding: 15px 0 25px;
+}
+.Merlot2-col3{
+	flex-basis: 32%;
+}
+.Merlot2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Merlot2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+/*------Malbec----------*/
+.Malbec{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Malbec-col1, .Malbec-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Malbec-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Malbec-col1 h3{
+	padding-top: 0;
+}
+.Malbec-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Malbec-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Malbec1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Malbec1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Malbec1-col1, .Malbec1-col2, .Malbec1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Malbec1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Malbec1-col2 h1{
+	padding-top: 0;
+}
+.Malbec1-col2 p{
+	padding: 15px 0 25px;
+}
+.Malbec1-col3{
+	flex-basis: 32%;
+}
+.Malbec1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Malbec1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Malbec2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Malbec2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Malbec2-col1, .Malbec2-col2, .Malbec2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Malbec2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Malbec2-col2 h1{
+	padding-top: 0;
+}
+.Malbec2-col2 p{
+	padding: 15px 0 25px;
+}
+.Malbec2-col3{
+	flex-basis: 32%;
+}
+.Malbec2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Malbec2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*------Pinotage----------*/
+.Pinotage{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Pinotage-col1, Pinotage-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Pinotage-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Pinotage-col1 h3{
+	padding-top: 0;
+}
+.Pinotage-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Pinotage-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Pinotage1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Pinotage1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Pinotage1-col1, .Pinotage1-col2, .Pinotage1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Pinotage1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Pinotage1-col2 h1{
+	padding-top: 0;
+}
+.Pinotage1-col2 p{
+	padding: 15px 0 25px;
+}
+.Pinotage1-col3{
+	flex-basis: 32%;
+}
+.Pinotage1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Pinotage1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+
+/*-----white wine----*/
+.sub-2-header-2-2{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Dest_San_Diego_Carruth-Cellars-Wine-Garden_Cheers_HERO__1920x1280.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-2-2 h1{
+	margin-top: 5px;
+}
+
+/*------Riesling----------*/
+.Riesling{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Riesling-col1, .Riesling-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Riesling-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Riesling-col1 h3{
+	padding-top: 0;
+}
+.Riesling-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Riesling-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Riesling1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Riesling1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Riesling1-col1, .Riesling1-col2, .Riesling1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Riesling1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Riesling1-col2 h1{
+	padding-top: 0;
+}
+.Riesling1-col2 p{
+	padding: 15px 0 25px;
+}
+.Riesling1-col3{
+	flex-basis: 32%;
+}
+.Riesling1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Riesling1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Riesling2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Riesling2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Riesling2-col1, .Riesling2-col2, .Riesling2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Riesling2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Riesling2-col2 h1{
+	padding-top: 0;
+}
+.Riesling2-col2 p{
+	padding: 15px 0 25px;
+}
+.Riesling2-col3{
+	flex-basis: 32%;
+}
+.Riesling2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Riesling2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Rose Wine-----*/
+.sub-2-header-1-6{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("pistachios-3450670__480.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-6 h1{
+	margin-top: 5px;
+}
+
+/*------Rose Wine----------*/
+.Rose-Wine{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Rose-Wine-col1, .Rose-Wine-col2{
+	width: 220px;
+	float: left;
+	margin: 10px;
+}
+.Rose-Wine-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Rose-Wine-col1 h3{
+	padding-top: 0;
+}
+.Rose-Wine-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Rose-Wine-col2 h3{
+	padding-top: 0;
+}
+
+
+
+/*-----Rose-Wine1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Rose-Wine1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Rose-Wine1-col1, .Rose-Wine1-col2, .Rose-Wine1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Rose-Wine1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Rose-Wine1-col2 h1{
+	padding-top: 0;
+}
+.Rose-Wine1-col2 p{
+	padding: 15px 0 25px;
+}
+.Rose-Wine1-col3{
+	flex-basis: 32%;
+}
+.Rose-Wine1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Rose-Wine1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Rose-Wine2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Rose-Wine2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Rose-Wine2-col1, .Rose-Wine2-col2, .Rose-Wine2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Rose-Wine2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Rose-Wine2-col2 h1{
+	padding-top: 0;
+}
+.Rose-Wine2-col2 p{
+	padding: 15px 0 25px;
+}
+.Rose-Wine2-col3{
+	flex-basis: 32%;
+}
+.Rose-Wine2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Rose-Wine2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----Champagne/Sparkling Wine----*/
+.sub-2-header-2-4{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("0_KxWo-Zkpp_SYuXrM.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-2-4 h1{
+	margin-top: 5px;
+}
+
+/*------Champagne----------*/
+.Champagne{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: auto;
+	margin: auto;
+}
+.Champagne-col1, .Champagne1-col2{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.Champagne-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.Champagne-col1 h3{
+	padding-top: 0;
+}
+.Champagne-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.Champagne-col2 h3{
+	padding-top: 0;
+}
+
+
+/*-----Champagne1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Champagne1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Champagne1-col1, .Champagne1-col2, .Champagne1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Champagne1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Champagne1-col2 h1{
+	padding-top: 0;
+}
+.Champagne1-col2 p{
+	padding: 15px 0 25px;
+}
+.Champagne1-col3{
+	flex-basis: 32%;
+}
+.Champagne1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Champagne1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----Champagne2----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.Champagne2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.Champagne2-col1, .Champagne2-col2, .Champagne2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.Champagne2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.Champagne2-col2 h1{
+	padding-top: 0;
+}
+.Champagne2-col2 p{
+	padding: 15px 0 25px;
+}
+.Champagne2-col3{
+	flex-basis: 32%;
+}
+.Champagne2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.Champagne2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----prosecco----*/
+.sub-2-header-2-4-2{
+	height: 50%;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-2-4-2 h1{
+	margin-top: 5px;
+}
+.prosecco{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.prosecco-col1, .prosecco-col2{
+	width: 280px;
+	float: left;
+	margin: 30px;
+}
+.prosecco-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.prosecco-col1 h1{
+	padding-top: 0;
+}
+.prosecco-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.prosecco-col2 h3{
+	padding-top: 0;
+}
+/*-----prosecco1----*/
+.sub-2-header-2-4-2-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.prosecco1{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.prosecco1-col1, .prosecco1-col2, .prosecco1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.prosecco1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.prosecco1-col2 h1{
+	padding-top: 0;
+}
+.prosecco1-col2 p{
+	padding: 15px 0 25px;
+}
+.prosecco1-col3{
+	flex-basis: 32%;
+}
+.prosecco1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.prosecco1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*-----prosecco2----*/
+.sub-2-header-2-4-2-2{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.prosecco2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.prosecco2-col1, .prosecco2-col2, .prosecco2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.prosecco2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.prosecco2-col2 h1{
+	padding-top: 0;
+}
+.prosecco2-col2 p{
+	padding: 15px 0 25px;
+}
+.prosecco2-col3{
+	flex-basis: 32%;
+}
+.prosecco2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.prosecco2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*-----other----*/
+.sub-2-header-2-4-3{
+	height: 50%;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-2-4-3 h1{
+	margin-top: 5px;
+}
+.other{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.other-col1, .other-col2{
+	width: 280px;
+	float: left;
+	margin: 30px;
+}
+.other-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.other-col1 h1{
+	padding-top: 0;
+}
+.other-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.other-col2 h3{
+	padding-top: 0;
+}
+/*-----other1----*/
+.sub-2-header-2-4-3-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.other1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.other1-col1, .other1-col2, .other1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.other1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.other1-col2 h1{
+	padding-top: 0;
+}
+.other1-col2 p{
+	padding: 15px 0 25px;
+}
+.other1-col3{
+	flex-basis: 32%;
+}
+.other1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.other1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*-----other2----*/
+.sub-2-header-2-4-3-2{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.other2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.other2-col1, .other2-col2, .other2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.other2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.other2-col2 h1{
+	padding-top: 0;
+}
+.other2-col2 p{
+	padding: 15px 0 25px;
+}
+.other2-col3{
+	flex-basis: 32%;
+}
+.other2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.other2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----sake----*/
+.sub-2-header-3-1{
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-3-1 h1{
+	margin-top: 5px;
+}
+.sake{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.sake-col1, .sake-col2{
+	width: 280px;
+	float: left;
+	margin: 30px;
+}
+.sake-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.sake-col1 h1{
+	padding-top: 0;
+}
+.sake-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.sake-col2 h1{
+	padding-top: 0;
+}
+
+/*-----sake1----*/
+.sub-2-header-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.sake1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.sake1-col1, .sake1-col2, .sake1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.sake1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.sake1-col2 h1{
+	padding-top: 0;
+}
+.sake1-col2 p{
+	padding: 15px 0 25px;
+}
+.sake1-col3{
+	flex-basis: 32%;
+}
+.sake1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.sake1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----sake2----*/
+.sub-2-header-3-1-2{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.sake2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.sake2-col1, .sake2-col2, .sake2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.sake2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.sake2-col2 h1{
+	padding-top: 0;
+}
+.sake2-col2 p{
+	padding: 15px 0 25px;
+}
+.sake2-col3{
+	flex-basis: 32%;
+}
+.sake2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.sake2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----cider----*/
+
+.sub-2-header-3-2{
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("friends-toasting-with-beer-glasses-in-the-royalty-free-image-1637621142.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-3-2h1{
+	margin-top: 5px;
+}
+.cider{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.cider-col1{
+	width: 280px;
+	float: left;
+	margin: 30px;
+}
+.cider-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.cider-col1 h1{
+	padding-top: 0;
+}
+/*-----cider1----*/
+.sub-2-header-3-2-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.cider1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.cider1-col1, .cider1-col2, .cider1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.cider1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.cider1-col2 h1{
+	padding-top: 0;
+}
+.cider1-col2 p{
+	padding: 15px 0 25px;
+}
+.cider1-col3{
+	flex-basis: 32%;
+}
+.cider1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.cider1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+/*-----beer----*/
+.sub-2-header-3-3{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("friends-toasting-with-beer-glasses-in-the-royalty-free-image-1637621142.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-3-3 h1{
+	margin-top: 5px;
+}
+
+
+/*-----lager----*/
+
+.sub-2-header-3-3-1{
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("friends-toasting-with-beer-glasses-in-the-royalty-free-image-1637621142.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-3-3-1 h1{
+	margin-top: 5px;
+}
+.lager{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.lager-col1, .lager-col2{
+	width: 280px;
+	float: left;
+	margin: 30px;
+}
+.lager-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.lager-col1 h1{
+	padding-top: 0;
+}
+.lager-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.lager-col2 h3{
+	padding-top: 0;
+}
+/*-----lager1----*/
+.sub-2-header-3-3-1-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.lager1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.lager1-col1, .lager1-col2, .lager1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.lager1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.lager1-col2 h1{
+	padding-top: 0;
+}
+.lager1-col2 p{
+	padding: 15px 0 25px;
+}
+.lager1-col3{
+	flex-basis: 32%;
+}
+.lager1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.lager1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*-----lager2----*/
+.sub-2-header-3-3-1-2{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.lager2{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.lager2-col1, .lager2-col2, .lager2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.lager2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.lager2-col2 h1{
+	padding-top: 0;
+}
+.lager2-col2 p{
+	padding: 15px 0 25px;
+}
+.lager2-col3{
+	flex-basis: 32%;
+}
+.lager2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.lager2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*-----weissbier----*/
+
+.sub-2-header-3-3-2{
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("WhatsApp Image 2023-04-22 at 9.46.17 PM.JPEG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-3-3-2 h1{
+	margin-top: 5px;
+}
+.weissbier{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.weissbier-col1, .weissbier-col2{
+	width: 280px;
+	float: left;
+	margin: 30px;
+}
+.weissbier-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.weissbier-col1 h1{
+	padding-top: 0;
+}
+.weissbier-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.weissbier-col2 h3{
+	padding-top: 0;
+}
+/*-----weissbier1----*/
+.sub-2-header-3-3-2-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.weissbier1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.weissbier1-col1, .weissbier1-col2, .weissbier1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.weissbier1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.weissbier1-col2 h1{
+	padding-top: 0;
+}
+.weissbier1-col2 p{
+	padding: 15px 0 25px;
+}
+.weissbier1-col3{
+	flex-basis: 32%;
+}
+.weissbier1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.weissbier1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*-----weissbier2----*/
+.sub-2-header-3-3-2-2{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.weissbier2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.weissbier2-col1, .weissbier2-col2, .weissbier2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.weissbier2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.weissbier2-col2 h1{
+	padding-top: 0;
+}
+.weissbier2-col2 p{
+	padding: 15px 0 25px;
+}
+.weissbier2-col3{
+	flex-basis: 32%;
+}
+.weissbier2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.weissbier2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+
+
+
+/*-----mixers----*/
+
+.sub-2-header-3-4{
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("friends-toasting-with-beer-glasses-in-the-royalty-free-image-1637621142.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-3-4 h1{
+	margin-top: 5px;
+}
+.mixers{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.mixers-col1, .mixers-col2{
+	width: 280px;
+	float: left;
+	margin: 30px;
+}
+.mixers-col1 img{
+	width: 100%;
+	height: 100%;
+}
+.mixers-col1 h1{
+	padding-top: 0;
+}
+.mixers-col2 img{
+	width: 100%;
+	height: 100%;
+}
+.mixers-col2 h3{
+	padding-top: 0;
+}
+/*-----mixers1----*/
+.sub-2-header-3-4-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.mixers1{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.mixers1-col1, .mixers1-col2, .mixers1-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.mixers1-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.mixers1-col2 h1{
+	padding-top: 0;
+}
+.mixers1-col2 p{
+	padding: 15px 0 25px;
+}
+.mixers1-col3{
+	flex-basis: 32%;
+}
+.mixers1-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.mixers1-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+/*-----mixers2----*/
+.sub-2-header-3-4-2{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Whiskey-Poured-On-Glass-With-Ice-Cubes.JPG");
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.mixers2{
+	height: 80vh;
+	width: 100%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom:50px;
+	background: #808080;
+}
+#row{
+	width: 900px;
+	margin: auto;
+}
+.mixers2-col1, .mixers2-col2, .mixers2-col3{
+	width: 280px;
+	float: left;
+	margin: 10px;
+}
+.mixers2-col1 img{
+	width: 80%;
+	height: 80%;
+}
+.mixers2-col2 h1{
+	padding-top: 0;
+}
+.mixers2-col2 p{
+	padding: 15px 0 25px;
+}
+.mixers2-col3{
+	flex-basis: 32%;
+}
+.mixers2-col3 h2{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.mixers2-col3 div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/*-----london gin----*/
+.sub-2-header-1-2-1{
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("friends-toasting-with-beer-glasses-in-the-royalty-free-image-1637621142.JPG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-2-header-1-2-1 h1{
+	margin-top: 5px;
+}
+.london-gin{
+	width: 80%;
+	margin: auto;
+	padding: 60px 0;
+}
+.london-left{
+	flex-basis: 65%;
+}
+.london-left img{
+	width: 20%;
+	height: 20%;
+}
+.london-left h2{
+	color: #222;
+	font-weight: 600;
+	margin: 30px 0;
+}
+.london-left p{
+	color: #999;
+	padding: 0;
+}
+.london-right{
+	flex-basis: 32%;
+}
+.london-right h3{
+	background: #f44336;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.london-right div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #555;
+	padding: 8px;
+	box-sizing: border-box;
+}
+.cart-box{
+	border: 1px solid #ccc;
+	margin: 20px 0;
+	padding: 10px 20px;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;    background-position: center;
+    background-size: cover;
+}
+/*-----contact page----*/
+.header1{
+	height: 50vh;
+    width: 100%;
+    background: #867F7F;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+.contact{
+	position: relative;
+	height: 80vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;	
+	background: #808080;
+	background-size: cover;
+}
+.contact .content{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h1{
+	font-size: 36px;
+	font-weight: 500;
+	color: #fff;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .contactInfo .box .icon{
+	min-width: 60px;
+	height: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+.container .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h2{
+	font-weight: 500;
+	color: #00bcd4;
+}
+.contactform{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+.contactform h1{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+.contactform .inputbox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.contactform .inputbox input, .contactform .inputbox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.contactform .inputbox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.contactform .inputbox input:focus ~ span, 
+.contactform .inputbox input:valid ~ span
+.contactform .inputbox textarea:focus ~ span, 
+.contactform .inputbox textarea:valid ~ span{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+	width:100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+
+
+

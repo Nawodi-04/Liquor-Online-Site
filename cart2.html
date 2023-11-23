@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add to Cart Example</title>
+  <style>
+    .item {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .add-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cart {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shopping Cart</h1>
+
+  <div class="item">
+    <h3>The Singleton of Dufftown, 18 Years</h3>
+    <p>Price: LKR.64800.00</p>
+    </div>
+
+
+  <script>
+    function addToCart(itemName, price) {
+      var cartItems = document.getElementById("cart-items");
+      var newItem = document.createElement("li");
+      newItem.innerText = itemName + " - $" + price;
+      cartItems.appendChild(newItem);
+    }
+  </script>
+</body>
+</html>
